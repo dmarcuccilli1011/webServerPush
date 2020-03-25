@@ -11,8 +11,6 @@ blocks:
         - name: docker build
           commands:
             - checkout
-      secrets:
-        - name: service account key
   - name: 'Block #2'
     task:
       jobs:
@@ -47,6 +45,8 @@ blocks:
             - gcloud container clusters get-credentials demo \
             - '        --project "${project}" \'
             - '        --zone us-central1-c'
+      secrets:
+        - name: service account key
   - name: 'Block #3'
     task:
       jobs:
