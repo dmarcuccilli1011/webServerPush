@@ -35,6 +35,7 @@ blocks:
             - '#kubectl version '
             - docker-compose --version
             - echo "Authenticating gcloud service account"
+            - 'echo ${GOOGLE_APPLICATION_CREDENTIALS}'
             - gcloud auth activate-service-account \
             - '        --key-file "${GOOGLE_APPLICATION_CREDENTIALS}" \'
             - '        --project "${project}"'
