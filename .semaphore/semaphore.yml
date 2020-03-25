@@ -16,7 +16,6 @@ blocks:
       jobs:
         - name: setup
           commands:
-            - '#!/usr/bin/env bash'
             - set -euo pipefail
             - 'main() {'
             - '        # TODO: replace the project with your project ID'
@@ -53,7 +52,6 @@ blocks:
       jobs:
         - name: deploy
           commands:
-            - '#!/usr/bin/env bash'
             - set -euo pipefail
             - 'main() {'
             - '        local namespace=production'
