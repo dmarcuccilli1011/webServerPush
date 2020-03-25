@@ -12,7 +12,7 @@ blocks:
           commands:
             - set -euo pipefail
             - '# TODO: replace the project with your project ID'
-            - local project=semaphore-gke-tutorial-272206
+            - '#local project=semaphore-gke-tutorial-272206'
             - '# Pre-req for gcloud install'
             - sudo apt-get update
             - sudo apt-get install -y apt-transport-https
