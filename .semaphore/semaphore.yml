@@ -41,7 +41,7 @@ blocks:
         - name: deploy
           commands:
             - set -euo pipefail
-            - local namespace=production
+            - '#local namespace=production'
             - docker-compose build
             - docker-compose push
             - 'kubectl apply -f k8s/production-namespace.yml --namespace "${namespace}"'
