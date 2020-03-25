@@ -11,6 +11,8 @@ blocks:
         - name: docker build
           commands:
             - checkout
+      secrets:
+        - name: service account key
   - name: 'Block #2'
     task:
       jobs:
