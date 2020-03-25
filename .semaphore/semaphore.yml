@@ -38,6 +38,9 @@ blocks:
             - gcloud container clusters get-credentials demo \
             - '        --project "${project}" \'
             - '        --zone europe-west1-b'
+  - name: 'Block #2'
+    task:
+      jobs:
         - name: deploy
           commands:
             - set -euo pipefail
